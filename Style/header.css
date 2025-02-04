@@ -1,0 +1,61 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo img {
+width: 140px;
+}
+
+.logo img:hover {
+  cursor: pointer;
+}
+
+.search-button {
+  width: 32px;
+  width: 20px;
+}
+
+.btn-outline-success {
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 22px;
+  color: black;
+  gap: 2px;
+}
+
+.btn-outline-success:hover {
+  border-color: rgb(255,0,0);
+  background-color: rgb(255,0,0);
+}
+
+.navbar {
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 16px;
+  background-image: linear-gradient(to right,rgb(94,140,183),rgb(94,140,183),transparent,rgb(94,140,183),rgb(94,140,183));
+  z-index: 3;
+  position: absolute;
+  top: 0;
+}
+
+.btn-outline-success:hover {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.form-control {
+  padding: .375rem .15rem !important;
+  height: 32px;
+  width: 188px;
+}
+
+
+.refresh-button {
+  width: 26px;
+}

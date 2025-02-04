@@ -1,0 +1,20 @@
+const typeColors = {
+  "Pflanze": "#78C850",
+  "Gift": "#A040A0",
+  "Feuer": "#F08030",
+  "Wasser": "#6890F0",
+  "Elektro": "#F8D030",
+  "Eis": "#98D8D8",
+  "Kampf": "#C03028",
+  "Boden": "#E0C068",
+  "Flug": "#A890F0",
+  "Psycho": "#F85888",
+  "Käfer": "#A8B820",
+  "Gestein": "#B8A038",
+  "Geist": "#705898",
+  "Drache": "#7038F8",
+  "Unlicht": "#705848",
+  "Stahl": "#B8B8D0",
+  "Fee": "#EE99AC",
+  "Normal": "#A8A878"
+};

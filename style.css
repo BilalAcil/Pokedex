@@ -1,0 +1,334 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1540px;
+  font-family: "Roboto", serif;
+  background-image: linear-gradient(to right, transparent, rgb(255, 205, 13), rgb(255, 205, 13), rgb(255, 205, 13), transparent);
+}
+
+main {
+  padding: 0 8px;
+  gap: 8px;
+  margin-top: 88px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 150px;
+  border: solid 3px black;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+}
+
+.plant-border {
+  border: solid 4px black;
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  border-bottom: solid 3px black;
+  padding-top: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.typ {
+  background-image: linear-gradient(to right, transparent, lightgray, lightgray, lightgray, transparent);
+  color: black;
+  margin: 4px 0;
+}
+
+.trainer-container {
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: flex-end;
+  background-color: rgb(255, 205, 13);
+}
+
+.trainer img {
+  height: 80px;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.d-none {
+  display: none;
+}
+
+.fullscreen-card {
+  z-index: 1000;
+  width: 350px;
+  aspect-ratio: 2/3;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+  border: solid 4px white;
+}
+
+.img-container {
+  width: auto;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url(./img/pokeball.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.fullscreen-card img {
+  padding: 16px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+
+}
+
+.full-card-name {
+  padding: 16px 0;
+  font-size: x-large;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.type-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.type-container div {
+  font-weight: 600;
+  width: 50%;
+  text-align: center;
+  background-image: linear-gradient(to right, transparent, white, transparent);
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  color: white;
+}
+
+td {
+  width: 50%;
+  text-align: center;
+}
+
+.chevron-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.chevron-container img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.chevron-container img:hover {
+  transform: scale(1.2);
+}
+
+.close-fullscreen {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  cursor: zoom-out;
+}
+
+.close-fullscreen img {
+  height: 40px;
+  width: 40px;
+  opacity: 0.5;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 999;
+}
+
+.close-fullscreen img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.img-div {
+  padding: 4px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-div img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.typ-contain {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+footer {
+  width: calc(100vw - var(--scrollbar-width));
+  height: 6vh;
+  background-image: linear-gradient(to right, transparent 20%, rgb(94, 140, 183) 30%, rgb(94, 140, 183) 70%, transparent 80%);
+  z-index: 999;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 800;
+  margin: 0;
+  transition: color .15s ease-in-out;
+}
+
+footer p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.no-pokemon {
+  width: 100%;
+  margin: 0;
+  top: 200px;
+  position: absolute;
+  text-align: center;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.padding {
+  width: 100%;
+  height: 200px;
+}
+
+.next-button {
+  width: calc(100vw - var(--scrollbar-width));
+  height: 5vh;
+  background-image: linear-gradient(to right, transparent 20%, rgb(94, 140, 183) 30%, rgb(94, 140, 183) 70%, transparent 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-button p {
+  font-weight: 800;
+  margin: 0;
+  transition: color .15s ease-in-out;
+}
+
+.next-button p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1000;
+  display: none;
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(94, 140, 183);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+.logo-container img {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  clip-path: inset(0 100% 0 0);
+  animation: reveal 2s forwards;
+}
+
+@keyframes reveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}

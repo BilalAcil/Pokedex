@@ -1,0 +1,39 @@
+@media only screen and (max-width: 750px) {
+
+  .form-control {
+    width: 70px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+
+  .d-flex {
+    justify-content: flex-end;
+}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .trainer img {
+    opacity: 0;
+  }
+
+  .container-fluid {
+    background-color: rgb(94, 140, 183);
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+
+  .container-fluid {
+    justify-content: center !important;
+    gap: 16px;
+  }
+
+  main {
+    margin-top: 120px;
+  }
+
+}
